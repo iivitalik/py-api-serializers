@@ -2,9 +2,11 @@ from rest_framework import viewsets
 from .models import Genre, Actor, CinemaHall, Movie, MovieSession
 from .serializers import (
     GenreSerializer, ActorSerializer, CinemaHallSerializer,
-    MovieSerializer, MovieListSerializer, MovieDetailSerializer, MovieSessionDetailSerializer,
+    MovieSerializer, MovieListSerializer, MovieDetailSerializer,
+    MovieSessionDetailSerializer,
     MovieSessionListSerializer, MovieSessionSerializer
 )
+
 
 class GenreViewSet(viewsets.ModelViewSet):
     queryset = Genre.objects.all()
